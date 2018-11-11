@@ -11,22 +11,13 @@
       <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
    </head>
    <body>
-      <div class="container2">
-         <div class='peta' id='mapid'> </div>
-         <div class='gambar' id='gambar'>
-            Gambar Disini
-         </div>
-         <div class='review' id='review'>Tulis review disini</div>
-      </div>
-      <script>
-         let mymap = L.map('mapid').setView([-7.9699335,112.6157525], 15);
-         L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-         attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors,<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-         maxZoom: 20,
-         id: 'mapbox.streets',
-         accessToken: 'pk.eyJ1IjoiYXVyYWthbnphYSIsImEiOiJjam50bXl4YmQwMHp0M3NvaTR5enczdXY5In0.diO4nB65NMjMvraaHQN-Qw'
-         }).addTo(mymap);
-      </script>
-      <script src="js/peta.js"></script>
+     <div class="container2">
+        <div class='peta' id='mapid'> </div>
+        <div class='gambar' id='gambar' style="width: 100%;">
+           Gambar Disini
+        </div>
+        <div class='review' id='review'>Tulis review disini</div>
+     </div>
+      <script src="js/peta2.js"></script>
    </body>
 </html>
