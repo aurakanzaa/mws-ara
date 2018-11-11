@@ -1,0 +1,44 @@
+{
+    "places" : [
+        {
+            "location": [-7.9806987,112.6281433],
+            "popup": "Toko OEN",
+            "event" : {
+                "gambar" :"1.jpg",
+                "review" : "Good ambience, tasty food, a little bit pricy but worth it."
+            }
+        },
+        {
+            "location": [-7.9687958,112.6318293],
+            "popup" : "Bakso Bakar Pak Man",
+            "event" : {
+                "gambar" : "2.jpg",
+                "review" : "One of best meatball in Malang.. 10/10 will come back again.. Crowded place in small place.. But the taste is very yummy.. You should try"
+            }
+        },
+        {
+            "location": [-7.9872182,112.6260826],
+            "popup" : "Soto Ayam Lombok",
+            "event" : {
+                "gambar" : "3.jpg",
+                "review" : "The legendary Soto Lombok, affordable price for one bowl of Soto Ayam with IDR 25k, the place is clean and neat. The taste is always pleased your tongue and made you to add one more bowl :)"
+            }
+        },
+        {
+            "location" : [-7.9820655,112.6251713],
+            "popup" : "Mie Setan",
+            "event" : {
+                "gambar" : "4.jpg",
+                "review" : "Try the level 5 spicy noodles and cry until you think there's no more tears to shed! What I like about the noodles is that beyond the tang they have excellent flavor. The sausage and veggies coming with them are also a nice touch to alleviate your tongue. Also, if you're looking into sides, the dim sum is a great choice! Thanks, Mie Sean, for the memories!"
+            }
+        },
+        {
+            "location" : [-7.975696,112.6177973],
+            "popup" : "Pecel Kawi 'Hj. Musilah' Asli 1975 ",
+            "event" : {
+                "gambar" : "5.jpg",
+                "review" : "the peanut sauce is superb.  slightly spicy but has a very smooth texture. the price is very cheap.  1 porsion for 11.000. they also sell other traditional food.  If you love the peanut sauce , you can buy from them"
+            }
+        }
+    ]
+}

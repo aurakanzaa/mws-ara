@@ -92,13 +92,16 @@ a.lbtn:hover, a.lbtn:active {
 }
 
 .btn-hitung{
-	background-color: #2d4059;
+	background-color: #EAF887;
 }
 .btn-peta{
-	background-color: #ffb400;
+	background-color: #79DC96;
+}
+.btn-peta2{
+	background-color: #3BBBB3;
 }
 .btn-profile{
-	background-color: #ea5455;
+	background-color: #377AAF;
 }
 
 /* hitung */
@@ -251,11 +254,17 @@ body {
 }
 
 .gambar {
-	background: green;
+	background: #415865;
 	grid-column: 1/6;
 }
 
+.gmbr{
+	padding: 10px;
+	width: 300px;
+	height: auto;
+}
 .review {
-	background: yellow;
+	background: #7A9EB1;
+	padding: 10px;
 	grid-column: 6/-1;
 }

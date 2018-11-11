@@ -6,81 +6,81 @@
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>Peta</title>
       <link rel="stylesheet" href="mygrid.css">
-      <link rel="stylesheet" href="mygrid.js">
+      <!-- <link rel="stylesheet" href="mygrid.js"> -->
       <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="crossorigin=""/>
       <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
    </head>
    <body>
       <div class="container2">
          <div class='peta' id='mapid'> </div>
-         <div class='gambar' id='gambar'>
+         <div class='gambar' id='gambar' style="width: 100%;">
             Gambar Disini
          </div>
          <div class='review' id='review'>Tulis review disini</div>
       </div>
-<script>
-    let mymap = L.map('mapid').setView([-7.9699335,112.6157525], 15);
-L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors,<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 20,
-    id: 'mapbox.streets',
-    accessToken: 'pk.eyJ1IjoiYXVyYWthbnphYSIsImEiOiJjam50bXl4YmQwMHp0M3NvaTR5enczdXY5In0.diO4nB65NMjMvraaHQN-Qw'
-}).addTo(mymap);
-
-function onMarkerClick() {
-    let gambar = document.querySelector("#gambar");
-    let review = document.querySelector("#review");
-    gambar.innerHTML = `<img src="./img/${this.epen.gambar}">`;
-    review.textContent = this.epen.review;
-}
-var arr_marker = [
-        {
-            location: [-7.9806987,112.6281433],
-            popup: "Toko OEN",
-            event : {
-                gambar: "1.jpg",
-                review: "Toko OEN"
-            }
-        },
-        {
-            location: [-7.9687958,112.6318293],
-            popup: "Bakso Bakar Pak Man",
-            event: {
-                gambar: "2.jpg",
-                review: "Bakso Bakar Pak Man"
-            }
-        },
-        {
-            location: [-7.9872182,112.6260826],
-            popup: "Soto Ayam Lombok",
-            event: {
-                gambar: "3.jpg",
-                review: "Soto Ayam Lombok"
-            }
-        },
-        {
-            location: [-7.9820655,112.6251713],
-            popup: "Mie Setan",
-            event: {
-                gambar: "4.jpg",
-                review: "Mie Setan"
-            }
-        },
-        {
-            location: [-7.9832459,112.6317166],
-            popup: "Bakpao Boldy Malang",
-            event: {
-                gambar: "5.jpg",
-                review: "Bakpao Boldy Malang"
-            }
-        }
-];
-
-for (m of arr_marker) {
-    let marker = L.marker(m.location);
-    marker.bindPopup(m.popup).on('click', onMarkerClick).addTo(mymap);
-    marker["epen"] = m.event;
-}
-</script>
+      <script>
+         let mymap = L.map('mapid').setView([-7.9699335,112.6157525], 15);
+         L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+         attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors,<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+         maxZoom: 20,
+         id: 'mapbox.streets',
+         accessToken: 'pk.eyJ1IjoiYXVyYWthbnphYSIsImEiOiJjam50bXl4YmQwMHp0M3NvaTR5enczdXY5In0.diO4nB65NMjMvraaHQN-Qw'
+         }).addTo(mymap);
+         
+         function onMarkerClick() {
+         let gambar = document.querySelector("#gambar");
+         let review = document.querySelector("#review");
+         gambar.innerHTML = `<img class="gmbr" src="./img/${this.epen.gambar}">`;
+         review.textContent = this.epen.review;
+         }
+         var arr_marker = [
+             {
+                 location: [-7.9806987,112.6281433],
+                 popup: "Toko OEN",
+                 event : {
+                     gambar: "1.jpg",
+                     review: "Toko OEN"
+                 }
+             },
+             {
+                 location: [-7.9687958,112.6318293],
+                 popup: "Bakso Bakar Pak Man",
+                 event: {
+                     gambar: "2.jpg",
+                     review: "Bakso Bakar Pak Man"
+                 }
+             },
+             {
+                 location: [-7.9872182,112.6260826],
+                 popup: "Soto Ayam Lombok",
+                 event: {
+                     gambar: "3.jpg",
+                     review: "Soto Ayam Lombok"
+                 }
+             },
+             {
+                 location: [-7.9820655,112.6251713],
+                 popup: "Mie Setan",
+                 event: {
+                     gambar: "4.jpg",
+                     review: "Mie Setan"
+                 }
+             },
+             {
+                 location: [-7.9832459,112.6317166],
+                 popup: "Bakpao Boldy Malang",
+                 event: {
+                     gambar: "5.jpg",
+                     review: "Bakpao Boldy Malang"
+                 }
+             }
+         ];
+         
+         for (m of arr_marker) {
+         let marker = L.marker(m.location);
+         marker.bindPopup(m.popup).on('click', onMarkerClick).addTo(mymap);
+         marker["epen"] = m.event;
+         }
+      </script>
    </body>
 </html>
