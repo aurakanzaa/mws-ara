@@ -1,5 +1,6 @@
 // INI SUDAH BERHASIL
 
+window.onload = function(){
 
 var mymap = L.map('mapid').setView([-7.9699335,112.6157525], 15);
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}',
@@ -59,19 +60,19 @@ function findLocation(x,y) {
         console.log(e);
     });
 
-    // let review1 = "Good ambience, tasty food, a little bit pricy but worth it.";
-    // let review2 = "One of best meatball in Malang.. 10/10 will come back again.. Crowded place in small place.. But the taste is very yummy.. You should try";
-    // let review3 = "The legendary Soto Lombok, affordable price for one bowl of Soto Ayam with IDR 25k, the place is clean and neat. The taste is always pleased your tongue and made you to add one more bowl :)";
-    // let review4 = "Try the level 5 spicy noodles and cry until you think there's no more tears to shed! What I like about the noodles is that beyond the tang they have excellent flavor. The sausage and veggies coming with them are also a nice touch to alleviate your tongue. Also, if you're looking into sides, the dim sum is a great choice! Thanks, Mie Sean, for the memories!";
-    // let review5 = "the peanut sauce is superb.  slightly spicy but has a very smooth texture. the price is very cheap.  1 porsion for 11.000. they also sell other traditional food.  If you love the peanut sauce , you can buy from them";
+//     let review1 = "Good ambience, tasty food, a little bit pricy but worth it.";
+//     let review2 = "One of best meatball in Malang.. 10/10 will come back again.. Crowded place in small place.. But the taste is very yummy.. You should try";
+//     let review3 = "The legendary Soto Lombok, affordable price for one bowl of Soto Ayam with IDR 25k, the place is clean and neat. The taste is always pleased your tongue and made you to add one more bowl :)";
+//     let review4 = "Try the level 5 spicy noodles and cry until you think there's no more tears to shed! What I like about the noodles is that beyond the tang they have excellent flavor. The sausage and veggies coming with them are also a nice touch to alleviate your tongue. Also, if you're looking into sides, the dim sum is a great choice! Thanks, Mie Sean, for the memories!";
+//     let review5 = "the peanut sauce is superb.  slightly spicy but has a very smooth texture. the price is very cheap.  1 porsion for 11.000. they also sell other traditional food.  If you love the peanut sauce , you can buy from them";
     
-    // let places = [
-    //     {"lokasi" : [-7.9806987,112.6281433], "popup" : "Toko OEN", "gambar" : "./img/1.jpg", "review" : review1},
-    //     {"lokasi" : [-7.9687958,112.6318293], "popup" : "Bakso Bakar Pak Man", "gambar" : "./img/2.jpg", "review" : review2},
-    //     {"lokasi" : [-7.9872182,112.6260826], "popup" : "Soto Ayam Lombok", "gambar" : "./img/3.jpg", "review" : review3},
-    //     {"lokasi" : [-7.9820655,112.6251713], "popup" : "Mie Setan", "gambar" : "./img/4.jpg", "review" : review4},
-    //     {"lokasi" : [-7.975696,112.6177973], "popup" : "Pecel Kawi 'Hj. Musilah' Asli 1975 ", "gambar" : "./img/5.jpg", "review" : review5},
-    // ];
+//     let places = [
+//         {"lokasi" : [-7.9806987,112.6281433], "popup" : "Toko OEN", "gambar" : "./img/1.jpg", "review" : review1},
+//         {"lokasi" : [-7.9687958,112.6318293], "popup" : "Bakso Bakar Pak Man", "gambar" : "./img/2.jpg", "review" : review2},
+//         {"lokasi" : [-7.9872182,112.6260826], "popup" : "Soto Ayam Lombok", "gambar" : "./img/3.jpg", "review" : review3},
+//         {"lokasi" : [-7.9820655,112.6251713], "popup" : "Mie Setan", "gambar" : "./img/4.jpg", "review" : review4},
+//         {"lokasi" : [-7.975696,112.6177973], "popup" : "Pecel Kawi 'Hj. Musilah' Asli 1975 ", "gambar" : "./img/5.jpg", "review" : review5},
+//     ];
 
 // for (var p of places) {
 //     var marker=
@@ -79,6 +80,7 @@ function findLocation(x,y) {
 //     .bindPopup(p.popup);
 //     marker.on('click', showLocation);
 //     }
+// }
 
-    
+}
     
