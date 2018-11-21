@@ -42,7 +42,7 @@ function findLocation(x,y) {
     let places = null;
 
     //fetch
-    fetch("/data/peta.json")
+    fetch("./data/peta.json")
     .then(res=>res.json())
     .then(res =>{
         // places = res.['places'];
