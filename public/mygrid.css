@@ -37,6 +37,10 @@
     grid-column-end: 2; */
 }
 
+.cont{
+	margin: 10px;
+}
+
 .acc{
 	font-size:15pt;
 	color: #1a0841;
