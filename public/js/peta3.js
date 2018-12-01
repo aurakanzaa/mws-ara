@@ -22,7 +22,7 @@ let showLocation = e => {
 let initMarkers = () => {
 	places = JSON.parse(localStorage.getItem('places')) || [];
 	for (const p of places) {
-		var marker = L.marker(p.lokasi).addTo(mymap).bindPopup(p.popup);
+		var marker = L.marker(p.lokasi).addTo(mymap).bindPopup(p.sponsor);
 		marker.on('click',showLocation);
 	}
 }
@@ -45,12 +45,11 @@ let initMarkers = () => {
 )( );
 
 
-let gambar= document.getElementById("gambar");
-let review= document.getElementById("review");
-let img= document.createElement('img');
-let par= document.createElement('p');
-gambar.appendChild(img);
-review.appendChild(par);
+let gmb = document.getElementById("gmb");
+let rev = document.getElementById("review");
+let img = document.createElement("img");
+let par = document.createElement("p");
+gmb.appendChild(img);
+rev.appendChild(par);
 
 let places = [];
-
